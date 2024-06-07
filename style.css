@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    object-fit: cover;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(46, 45, 45) 0%, rgb(34, 34, 34) 100%);
+}
+
+nav {
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #3b3a3a;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+nav a.logo {
+    font-size: 33px;
+    color: rgb(187, 18, 187);
+    font-weight: 600;
+}
+
+nav .links a:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav .menu .item,
+nav .menu .item3,
+nav .menu .item4 {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav .menu .item i {
+    font-size: 34px;
+    color: rgb(216, 114, 114);
+    width: 50px;
+    transition: color 0.3s ease;
+}
+
+nav .menu .item3 i {
+    font-size: 34px;
+    color: #317ccc;
+    width: 50px;
+    transition: color 0.3s ease;
+}
+
+nav .menu .item4 i {
+    font-size: 34px;
+    color: #ff2a2a;
+    width: 50px;
+    transition: color 0.3s ease;
+}
+
+nav .menu .item3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 2px;
+    background-color: #43ff72;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+nav .menu .item3:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav .menu .item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 2px;
+    background-color: #317ccc; /* Color azul de la línea */
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+nav .menu .item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.mpremium-section {
+    background-color: rgba(255, 228, 52, 0.171);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.mpremium-section i {
+    font-size: 44px;
+    font-weight: 500;
+    color: rgb(230, 218, 62);
+}
+
+.mpremium-section h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.mpremium-section p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.mpremium-section a {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(230, 218, 62);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mpremium-section a:hover {
+    opacity: 0.9;
+}
+
+.guia-section {
+    background-color: rgba(76, 243, 255, 0.171);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+.guia-section i {
+    font-size: 44px;
+    font-weight: 500;
+    color: #317ccc;
+}
+
+.review {
+    background: #3b3a3a;
+    padding: 10px;
+
+}
+
+.guia-section h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.guia-section p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.guia-section a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #317ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.guia-section a:hover {
+    opacity: 0.9;
+}
+
+header {
+    padding: 0 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .left {
+    width: 700px;
+}
+
+header .left h1 {
+    font-size: 90px;
+    color: #fff;
+}
+
+header .left h1 span {
+    color: rgb(216, 114, 114);
+}
+
+header .left p {
+    margin: 30px 0;
+    color: #bbb;
+}
+
+header .left a {
+    display: flex;
+    align-items: center;
+    background: rgb(230, 218, 62);
+    width: 240px;
+    padding: 8px;
+    border-radius: 60px;
+    color: #fff;
+}
+
+header .left a i {
+    background-color: #3b3a3a;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 8px;
+    color: rgb(230, 218, 62);
+}
+
+header .left a span {
+    color: #fff;
+    margin-left: 10px;
+}
+
+header img {
+    width: 600px;
+}
+
+h2.separator {
+    padding: 0 80px;
+    font-size: 40px;
+    margin-top: 40px;
+    color: #fff;
+}
+
+h2.separator span {
+    color: rgb(216, 114, 114);
+}
+
+.sell-nft {
+    padding: 0 80px;
+    margin: 50px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sell-nft .item h5{
+    color: #fff;
+}
+
+.sell-nft .item,
+.nft-list .item {
+    padding: 20px;
+    background: #3b3a3a;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+    color: #bbb;
+}
+
+.sell-nft .item .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sell-nft .item .header i {
+    font-size: 40px;
+    color: rgb(216, 114, 114);
+}
+
+.sell-nft .item .header h5 {
+    font-size: 17px;
+}
+
+.sell-nft .item p {
+    margin-top: 10px;
+    padding: 0 4px;
+}
+
+.sellers {
+    padding: 0 80px;
+    margin: 40px 0 80px;
+    display: flex;
+    gap: 30px;
+}
+
+.sellers .item {
+    background: #3b3a3a;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    gap: 14px;
+    padding: 14px;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.sellers .item i {
+    width: 25px;
+    color: rgb(216, 114, 114);
+    font-size: 34px;
+}
+
+.sellers .item .info p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+footer {
+    background-color: #3b3a3a;
+    color: #fff;
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+footer .right {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+}
+
+footer .right .links {
+    display: flex;
+    gap: 30px;
+}
+
+footer .right .links a {
+    color: #989898;
+    transition: color 0.3s ease;
+}
+
+footer .right .links a:hover {
+    color: rgb(216, 114, 114);
+}
+
+footer .right .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .right .social i {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer .right .social i:hover {
+    color: rgb(216, 114, 114);
+}
+
+footer .right p {
+    font-size: 13px;
+    color: #706666;
+}
+
+.msg-premium {
+    background-color: #3b3a3a;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.msg-premium i {
+    font-size: 44px;
+    font-weight: 500;
+    color: rgba(255, 230, 66, 0.678);
+}
+
+.msg-premium h1 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.msg-premium p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #bbb;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.premium-plan, .premium-free {
+    flex: 1;
+    margin: 10px;
+    background-color: #3b3a3a;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.plan-title, .free-title {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.plan-title i, .free-title i {
+    margin-right: 5px;
+    font-weight: 900;
+}
+
+.plan-title {
+    background-color: rgba(255, 230, 66, 0.678);
+}
+
+.free-title {
+    background-color: #317ccc;
+}
+
+.plan-price cps, .plan-permanent-price cp {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.plan-price span, .plan-permanent-price span {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.plan-small-letter {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.plan-features, .free-features {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plan-feature, .free-feature {
+    margin-bottom: 10px;
+    align-items: center;
+    color: #fff;
+}
+
+.plan-feature i, .free-feature i {
+    color: #43ff72;
+    margin-right: 1px;
+}
+
+.plan-buy, .plan-free {
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.plan-buy:hover, .plan-free:hover {
+    background-color: rgba(255, 230, 66, 0.678);
+}
+
+.button.border, .cbutton.border {
+    border: 2px solid rgba(255, 230, 66, 0.678);
+}
+
+.plan-free:hover {
+    background-color: #317ccc;
+}
+
+.cbutton.border {
+    border: 2px solid #317ccc;
+}
+
+.formulario {
+    display: flex;
+    background: #3b3a3a;
+    height: 50%;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+.formu {
+    padding: 30px 80px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formu h1 {
+    color: rgb(216, 114, 114);
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.formu p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 15px;
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.box {
+    border: 0;
+    background: #bbb;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    outline: none;
+}
+
+.submit {
+    background: rgb(216, 114, 114);
+    border: 0;
+    padding: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 250px;
+    margin-top: 25px;
+}
+
+.submit:hover {
+    opacity: 0.9;
+}
+
+.img-1 {
+    width: 350px;
+    margin-bottom: 75px;
+}
+
+#reporte-enviado {
+    display: none;
+    padding: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    background: #3b3a3a
+}
+
+#reporte-enviado h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #fff
+
+}
+
+#reporte-enviado p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.v-btn {
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: rgb(216, 114, 114);
+    border-radius: 25px;
+    color: white;
+    pointer-events: auto;
+}
+
+.enviado-activo {
+    overflow: hidden;
+    pointer-events: none;
+}
+
+
+.error-mensaje {
+    font-size: 10px;
+    color: #ff2a2a;
+}
+
+.analycs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.analycs-container .stats {
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    color: #fff;
+}
+
+.analycs-container .votes {
+    background-color: #ff3366;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    color: #fff;
+}
+
+.analycs-container .datos {
+    background-color: #007bbf;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    color: #fff;
+}
+
+.analycs-container span {
+    font-size: 80px;
+    float: right;
+}
+
+.configuraciones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.configuraciones-container .logs,
+.configuraciones-container .cooldown,
+.configuraciones-container .valoraciones,
+.configuraciones-container .bloqueos,
+.configuraciones-container .cstaff,
+.configuraciones-container .csalida {
+    background-color: #131212a6;
+    padding: 20px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.configuraciones-container h2 {
+    color: rgb(216, 114, 114);
+    font-weight: 500;
+}
+
+.configuraciones-container p {
+    color: #bbb;
+}
+
+.configuraciones-container span {
+    font-size: 80px;
+    float: right;
+}
+
+@media screen and (max-width: 1400px) {
+    nav,
+    header,
+    h2.separator,
+    .sell-nft,
+    .sellers {
+        padding: 0 40px;
+    }
+
+    header .left h1 {
+        font-size: 60px;
+    }
+
+    header img {
+        width: 540px;
+    }
+
+    .nft-list .item img {
+        width: 220px;
+        height: 220px;
+    }
+
+    footer {
+        padding: 50px 40px;
+    }
+
+    footer h3 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header .left h1 {
+        font-size: 48px;
+    }
+
+    header img {
+        width: 480px;
+    }
+
+    h2.separator {
+        font-size: 34px;
+    }
+
+    .sell-nft .item .header i {
+        font-size: 36px;
+    }
+
+    .sell-nft .item .header h5 {
+        font-size: 15px;
+    }
+
+    .sell-nft .item p {
+        font-size: 13px;
+    }
+
+    .nft-list {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .nft-list .item {
+        width: 48%;
+    }
+
+    .nft-list .item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sellers {
+        flex-wrap: wrap;
+    }
+
+    .sellers .item {
+        width: 48%;
+    }
+
+    footer .links a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    header {
+        flex-direction: column-reverse;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    header .left {
+        width: 100%;
+    }
+
+    header img {
+        width: 300px;
+    }
+
+    .sell-nft {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .sell-nft .item {
+        width: 48%;
+    }
+
+    .sellers {
+        gap: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+
+    footer h3 {
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+
+    footer .right {
+        width: 100%;
+        align-items: center;
+    }
+
+    .header .left {
+        text-align: center;
+    }
+
+    header .left a{
+        margin: auto;
+    }
+
+    .formulario {
+        width: 350px;
+        height: 800px;
+        margin-top: 50px;
+    }
+
+    .formu {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav,
+    header,
+    h2.separator,
+    .sell-nft,
+    .sellers {
+        padding: 0 20px;
+    }
+
+    header .left h1 {
+        font-size: 36px;
+    }
+
+    header img{
+        width: 300px;
+        height: auto;
+    }
+
+    header .left p {
+        font-size: 14px
+    }
+
+    .header .left {
+        text-align: center;
+    }
+
+    header .left a{
+        margin: auto;
+    }
+
+    .plans-container {
+        flex-direction: column;
+    }
+
+    .premium-plan, .premium-free {
+        flex: none;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    header .left h1{
+        font-size: 30px;
+    }
+
+    header .left{
+        text-align: center;
+    }
+
+    header .left a{
+        margin: auto;
+    }
+
+    header img{
+        width: 200px;
+        height: auto;
+    }
+
+    .sell-nft .item{
+        width: 100%;
+    }
+
+    .nft-list .item,
+    .sellers .item{
+        width: 47%;
+    }
+}

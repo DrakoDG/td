@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Reportes Tickets Draking</title>
+</head>
+<body>
+
+    <nav>
+        <div class="menu">
+            <div class="item">
+                <a href="configuraciones.html">
+                <i class="bx bx-cog"></i>
+            </a>
+            </div>
+            <div class="item">
+                <a href="analítica.html">
+                <i class="bx bx-analyse"></i>
+            </a>
+            </div>
+            <div class="item">
+                <a href="reportar.html">
+                <i class="bx bx-clipboard"></i>
+            </a>
+            </div>
+            <a href="premium.html">
+            <div class="item">
+                <i class="bx bx-crown"></i>
+            </a>
+            </div>
+            <a href="index.html">
+            <div class="item4">
+                <i class="bx bx-log-out"></i>
+            </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="formulario">
+        <form class="formu" id="myForm">
+            <h1>Tickets Draking Reportar</h1>
+            <p>
+                ¿Qué esperas para reportar los bugs, servidores o usuarios de Tickets Draking?
+            </p>
+
+            <label for="nombre">Escribe tu Nombre</label>
+            <span id="mensaje-nombre"></span>
+            <input type="text" id="nombre" class="box">
+
+            <label for="reporte">Escribe tu Reporte</label>
+            <span id="mensaje-reporte"></span>
+            <textarea class="box" id="reporte" cols="30" rows="2"></textarea>
+
+            <label for="imagen">Adjunta Pruebas</label>
+            <span id="mensaje-image"></span>
+            <input type="image" id="imagen" class="image">
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+
+        <div class="info">
+            <img src="logo.png" class="img-1" alt="">
+        </div>
+
+    </div>
+
+    <div class="enviado" id="reporte-enviado">
+        <h2>Reporte Enviado</h2>
+        <p>Tu reporte ha sido enviado correctamente, Gracias por tu reporte...</p>
+        <a href="index.html" class="v-btn">Volver</a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

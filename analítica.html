@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Tickets Draking</title>
+</head>
+<body>
+
+    <nav>
+        <div class="menu">
+            <div class="item">
+                <a href="configuraciones.html">
+                    <i class="bx bx-cog"></i>
+                </a>
+            </div>
+            <div class="item">
+                <a href="analítica.html">
+                    <i class="bx bx-analyse"></i>
+                </a>
+            </div>
+            <div class="item">
+                <a href="reportar.html">
+                    <i class="bx bx-clipboard"></i>
+                </a>
+            </div>
+            <a href="premium.html">
+                <div class="item">
+                    <i class="bx bx-crown"></i>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="item4">
+                    <i class="bx bx-log-out"></i>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <div class="analycs-container">
+        <div class="stats">
+            <h2>Estadísticas Generales</h2>
+            <span class="bx bx-planet"></span>
+            <h4>Servidores</h4> 
+            <p><strong id="server-count"></strong> Servidores</p>
+            <h4>Usuarios</h4>
+            <p><strong id="user-count"></strong> Usuarios</p>
+        </div>
+
+        <div class="votes">
+            <h2>Estadísticas Votos</h2>
+            <span class="bx bx-diamond"></span>
+            <h4>Votos Totales</h4>
+            <p><strong id="vote-count"></strong> Votos</p>
+            <h4>Mensual</h4>
+            <p><strong id="vote-month"></strong> Votos</p>
+        </div>
+
+        <div class="datos">
+            <h2>Base de Datos</h2>
+            <span class="bx bx-book-bookmark"></span>
+            <h4>Paneles</h4>
+            <p><strong id="panels"></strong> Paneles</p>
+            <h4>Components</h4>
+            <p><strong id="components"></strong> Componentes</p>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
